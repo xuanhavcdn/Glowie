@@ -11,7 +11,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(features={"src//test//java//features"}
 					,glue={"stepdefinations","utility"}
 					,plugin = {"pretty", "html:target/cucumber"}
-					, tags ={"@web","@appium"}
+					, tags ={"@web","@Android"}
 		)
 @Test
 public class RunTest extends AbstractTestNGCucumberTests{

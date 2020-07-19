@@ -2,7 +2,7 @@ Feature: Login
 
   @Android
   Scenario Outline: Login successfully with valid username and password - account 1 - unsaved selection
-    Given I open the application
+#    Given I open the application
     When I click I have an account already
     And I input username as "<username>"
     And I input password as "<password>"
@@ -16,7 +16,7 @@ Feature: Login
 
   @Android
   Scenario Outline: Login failed and error message is displayed correctly - account 1
-    Given I open the application
+#    Given I open the application
     When I click I have an account already
     And I input username as "<username>"
     And I input password as "<password>"
@@ -30,7 +30,7 @@ Feature: Login
 
   @Android
   Scenario Outline: Login successfully with valid username and password - account 1 - saved selection
-    Given I open the application
+#    Given I open the application
     When I click I have an account already
     And I input username as "<username>"
     And I input password as "<password>"
@@ -69,8 +69,8 @@ Feature: Login
 
   @Android
   Scenario Outline: Login successfully with valid username and password - account 1 - saved selection
-    Given I open the application
-    When I click I have an account already
+#    Given I open the application
+     When I click I have an account already
     And I input username as "<username>"
     And I input password as "<password>"
     And I click login button
@@ -102,14 +102,7 @@ Feature: Login
     Examples:
       | username   | password |
       | 0988903450 | test1234 |
-
-#  @appium
-#  Scenario: Login successfully via Facebook account - account 1
-#    Given I open the application
-#    When I click txtHaveAnAccount
-#    And I click login via Facebook account
-#    And I select a Facebook Account
-#    Then The home page is open
+    
 
 
 
