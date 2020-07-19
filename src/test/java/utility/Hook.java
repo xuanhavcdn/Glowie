@@ -57,7 +57,7 @@ public class Hook {
 		System.out.println("Start testing");
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "INE LX2");
+		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
 		caps.setCapability("appPackage", "com.glowie.staging");
 		caps.setCapability("appActivity","com.glowie.app.ui.feature.splashscreen.view.SplashScreenActivity");
 		driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
