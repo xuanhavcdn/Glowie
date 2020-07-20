@@ -61,7 +61,7 @@ public class Hook {
 		caps.setCapability("appPackage", "com.glowie.staging");
 		caps.setCapability("appActivity","com.glowie.app.ui.feature.splashscreen.view.SplashScreenActivity");
 		driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 	}
 
 //	@Before("@iOS")

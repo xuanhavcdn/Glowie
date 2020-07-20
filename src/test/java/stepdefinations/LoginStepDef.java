@@ -24,7 +24,7 @@ public class LoginStepDef {
 
     @When("^I click I have an account already$")
     public void iClickTxtHaveAnAccount() {
-            BtnExistingAccount.click();
+      driver.findElement(By.id("com.glowie.staging:id/txtHaveAnAccount")).click();
     }
 
     @When("^I click login with different account$")
@@ -88,7 +88,7 @@ public class LoginStepDef {
 
     @Then("^The home page is open$")
     public void theHomePageIsOpen() {
-        Assert.assertTrue(driver.findElement(By.id("com.glowie.staging:id/tvTabContest")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.id("com.glowie.staging:id/ivProfile")).isDisplayed());
     }
 
     @Then("^The error message \"([^\"]*)\" is displayed$")
