@@ -6,9 +6,11 @@ Feature: Trending screen
     And I input username as "<username>"
     And I input password as "<password>"
     And I click login button
-    And I click filter button
-    And I select contest "<contestname>" to view Trending
-    Then Default Trending screen with no post is displayed success
+#    And I click filter button
+#    And I select contest "<contestname>" to view Trending
+    And click on my pick bottom
+    And I select contest "<contestname>" to view Trending by scroll
+    And Click on user picked
     Examples:
       | username   | password | contestname              |
       | 0988903111 | test1234 | Automation Trending Test |
